@@ -168,7 +168,7 @@ static int ext_power_generic_init(const struct device *dev) {
     if (config->init_delay_ms) {
         k_msleep(config->init_delay_ms);
     }
-    
+    k_msleep(1000);
     return 0;
 }
 
